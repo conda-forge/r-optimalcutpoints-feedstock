@@ -1,4 +1,4 @@
-{% set version = '1.1-4' %}
+{% set version = "1.1-5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/OptimalCutpoints_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/OptimalCutpoints/OptimalCutpoints_{{ version }}.tar.gz
-  sha256: cf2366b37da421a6dca12ea44a3c4c9d9c679115b2fd5282fe7e8cc3e6af5b58
+  sha256: 71d53a8d877f74b5cabdd8529727b0925c7fbc5b02b43f78dde8efaeea808f1e
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -36,13 +36,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=OptimalCutpoints
   license: GPL
-  summary: Computes optimal cutpoints for diagnostic tests or continuous markers. Various approaches
-    for selecting optimal cutoffs have been implemented, including methods based on
-    cost-benefit analysis and diagnostic test accuracy measures (Sensitivity/Specificity,
-    Predictive Values and Diagnostic Likelihood Ratios). Numerical and graphical output
-    for all methods is easily obtained.
+  summary: Computes optimal cutpoints for diagnostic tests or continuous markers. Various approaches for selecting optimal cutoffs have been implemented, including methods based on cost-benefit analysis and diagnostic test accuracy measures (Sensitivity/Specificity, Predictive Values and Diagnostic Likelihood Ratios). Numerical
+    and graphical output for all methods is easily obtained.
   license_family: GPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
