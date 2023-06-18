@@ -1,11 +1,11 @@
-About r-optimalcutpoints
-========================
+About r-optimalcutpoints-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-optimalcutpoints-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=OptimalCutpoints
 
 Package license: GPL
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-optimalcutpoints-feedstock/blob/main/LICENSE.txt)
 
 Summary: Computes optimal cutpoints for diagnostic tests or continuous markers. Various approaches for selecting optimal cutoffs have been implemented, including methods based on cost-benefit analysis and diagnostic test accuracy measures (Sensitivity/Specificity, Predictive Values and Diagnostic Likelihood Ratios). Numerical and graphical output for all methods is easily obtained.
 
